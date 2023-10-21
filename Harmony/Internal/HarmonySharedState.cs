@@ -128,7 +128,7 @@ namespace HarmonyLib
 				module.ImportReference(typeof(int))
 			));
 
-			return ReflectionHelper.Load(module).GetType(name);
+			return ReflectionHelperPatched.Load(module).GetType(name);
 		}
 
 		internal static PatchInfo GetPatchInfo(MethodBase method)
